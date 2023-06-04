@@ -1,0 +1,15 @@
+@use'header';
+@use'footer';
+@use'web/productos';
+@use'web/ayuda';
+@use'web/contactos';
+@use'web/nosotros';
+@use'web/index';
+@use'variables';
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+
