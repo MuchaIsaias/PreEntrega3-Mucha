@@ -48,9 +48,9 @@
 .header{
     width: 100%;
     border-top:1px solid #dee2e6;
-        z-index:9999;
-        position: sticky;
-        top:0rem ;
+    z-index:9999;
+    position: sticky;
+    top: 0;
     .body_header{
         @include flex(flex,row,space-evenly,wrap);
         background-color: variables.$fonts-color;
@@ -86,7 +86,6 @@
         background-color: variables.$prime-color;
         height: 6rem;
         color: #555;
-        
         box-shadow: 0 4px 18px 0 rgba(0,0,0,.12),0 7px 10px -5px rgba(0,0,0,.15);;
         .nav-ul{
             align-items: center;

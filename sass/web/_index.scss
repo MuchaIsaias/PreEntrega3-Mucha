@@ -1,6 +1,7 @@
 main{
     .index-carousel{
         margin-bottom: 8rem;
+        margin-top: 0.2rem;
     }
     .section-promociones{
         justify-content: center;
@@ -26,6 +27,7 @@ main{
             h3{
                 font-weight: 645;
                 font-size: 1.5rem;
+                color: blue;
             }
         }
     }
@@ -40,9 +42,12 @@ main{
         justify-content: center;
         gap: 2rem;
         margin-right:0rem;
+        margin-bottom: 5rem;
         article{
             width: 30rem;
-            height: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             img{
                 width: 100%;
             }
@@ -55,9 +60,20 @@ main{
             h3{
                 color: red;
                 text-align: center;
+                padding-top: 2rem;
+                font-size: 2.2rem;
             }
-            .productos-boton{
-                height: 25%;
+            .conteiner-button{
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                display: flex;
+                justify-content: center;
+                gap: 4rem;
+                button{
+                    width: 9rem;
+                    height: 3.5rem;
+                    font-size: 1.7rem;
+                }
             }
         }
     }

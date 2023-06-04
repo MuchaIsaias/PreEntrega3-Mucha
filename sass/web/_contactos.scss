@@ -1,0 +1,57 @@
+.main-contactos{
+    background-color: #ebebeb;
+    .contactos-section{
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0rem 5rem 0rem;
+        gap: 4rem;
+        .contactos-informacion{
+            h2{
+                font-size: 2.7rem;
+                padding: 1rem;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                h3{
+                    font-size: 2.2rem;
+                }
+                p{
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .contactos-registro{
+        div{
+            .contactos-form{
+                padding-bottom: 2rem;
+                .contactos-form-inputs{
+                    width: 100%;
+                    display: flex;
+                    gap: 0.5rem;
+                    input{
+                        font-size: 2rem;
+                        width: 50%;
+                        height: 5rem;
+                    }
+                }
+                .contactos-form-textarea{
+                    textarea{
+                        height: 12rem;
+                    }
+                }
+                button{
+                    width: 100%;
+                    height: 5rem;
+                }
+            }
+            .contactos-mapa{
+                iframe{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
