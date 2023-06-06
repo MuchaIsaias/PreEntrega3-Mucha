@@ -9,6 +9,7 @@
         padding-left: 10rem;
         padding-top: 3rem;
         padding-bottom: 0.5rem;
+        font-weight: 700;
     }
     .footer-info{
         display: block;
@@ -22,10 +23,12 @@
             font-size: 2.4rem;
             padding-top: 1.7rem;
             border-bottom: variables.$box;
+            font-weight: 700;
         }
         p{
             font-size: 1.5rem;
             padding-bottom: 1rem;
+            font-weight: 500;
         }
     }
     .footer-form{
@@ -37,10 +40,12 @@
                 width: 70%;
                 height: 5rem;
                 font-size: 2rem;
+                font-weight: 500;
             }
             p{
                 font-size: 1.6rem;
                 width: 80%;
+                font-weight: 500;
             }
         }
     }

@@ -1,0 +1,24 @@
+.nosotros-main{
+    padding: 5rem;
+    background-color:#ebebeb ;
+    .nosotros-section{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #ebebeb;
+        .nosotros-titulo{
+            h2{
+                font-size: 3rem;
+                background-color: white;
+                padding: 1.5rem;
+            }
+        }
+        .nosotros-body{
+            padding: 3rem;
+            background-color: white;
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

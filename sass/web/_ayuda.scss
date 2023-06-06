@@ -1,7 +1,32 @@
+@use'../variables';
 .ayuda-main{
     background-color: #ebebeb;
     .ayuda-main-contenedor{
         padding: 5rem;
-        font-size: 3remgit ;
+        div{
+            h2{
+                button{
+                    background-color: #0e2a47;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+            div{
+                div{
+                    background-color: #ebebeb;
+                    border-left: 1px solid gray;
+                    border-right: 1px solid gray;
+                    h3{
+                        font-size: 2.2rem;
+                        color: blue;
+                    }
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
     }
 }
