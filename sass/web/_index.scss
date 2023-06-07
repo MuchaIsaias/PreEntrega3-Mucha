@@ -2,21 +2,29 @@ main{
     .index-carousel{
         margin-bottom: 8rem;
         margin-top: 0.2rem;
+        .carousel{
+            .conteiner-imagenes{
+                div{
+                    height: 45rem;
+                    img{
+                        height: 45rem;
+                    }
+                }
+            }
+        }
     }
     .section-promociones{
-        justify-content: center;
         margin-bottom: 7rem;
         flex-wrap: wrap;
+        justify-content: center;
         article{
             display: flex;
-            width: 21%;
-            justify-content: space-evenly;
+            width: 30rem;
+            gap: 1rem;
             img{
                 width: 6.5rem;
-                height: 78%;
             }
             div{
-                width: 16rem;
                 p{
                     font-size: 1.2rem;
                     letter-spacing:1.4px;
@@ -25,9 +33,9 @@ main{
                 }
             }
             h3{
-                font-weight: 645;
+                font-weight: 700;
                 font-size: 1.5rem;
-                color: blue;
+                color: #4286f4;
             }
         }
     }
@@ -36,7 +44,7 @@ main{
         h2{
             text-align: center;
             font-size: 3rem;
-            color: blue;
+            color: #4286f4;
         }
     }
     .productos{
@@ -44,46 +52,51 @@ main{
         gap: 4rem;
         margin-right:0rem;
         margin-bottom: 5rem;
-        article:hover{
-            box-shadow: 0 10px 20px #c7c7c7;
-            transform: translate(0,-3px);
-        }
         article{
             width: 28rem;
-            box-shadow: 0 1px 5px #c7c7c7;
-            transition: all 0.3s;
+            padding: 0rem;
+            .conteiner-cards:hover{
+            box-shadow: 0 10px 20px #c7c7c7;
+            transform: translate(0,-3px);
+            }
             .conteiner-cards{
                 display: flex;
                 flex-direction: column;
                 height: 100%;
                 justify-content: space-between;
                 align-items: center;
+                gap: 1rem;
+                box-shadow: 0 1px 5px #c7c7c7;
+                padding: 0rem 2rem 0rem 2rem;
+                transition: all 0.3s;
                 img{
                     width: 100%;
                 }
                 div{
                     text-align: center ;
+                    p:hover{
+                        color: #4286f4;
+                    }
                     p{
                         font-size: 1.6rem;
                         font-weight: 500;
                     }
                 }
                 h3{
-                    color: red;
+                    color: #4286f4;
                     text-align: center;
                     font-size: 2rem;
                     font-weight: 600;
                 }
                 .conteiner-button{
                     display: flex;
-                    padding-top: 2rem;
                     gap: 2rem;
                     width: 100%;
                     padding-bottom: 1rem;
                     button:hover{
                         box-shadow: 0 1px 5px #c7c7c7;
                         transform: translate(0,-3px);
-                        background-color: lightblue;
+                        background-color: #4286f4;
                     }
                     button{
                         transition: all 0.3s;
@@ -98,9 +111,6 @@ main{
                     }
                 }
             }
-        }
-        .index-modal{
-            z-index: 9999;
         }
     }
 }

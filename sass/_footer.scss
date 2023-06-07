@@ -48,6 +48,19 @@
                 font-weight: 500;
             }
         }
+        .footer-redes{
+            display: flex;
+            gap: 5rem;
+            padding-top: 8rem;
+            li{
+                list-style: none;
+                a{
+                    img{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
     }
     .final-footer{
         background-color: #0e2a47;

@@ -5,7 +5,7 @@
 @use'web/contactos';
 @use'web/nosotros';
 @use'web/index';
-@use'variables';
+@use'./mediaqueries';
 *{
     margin: 0;
     padding: 0;

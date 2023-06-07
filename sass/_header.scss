@@ -16,7 +16,6 @@
                 color: #6c757d;
                 margin-bottom: 0rem;
                 padding-top: 0.2rem;
-                color: blue;
             }
         }
         .contactos-top_header{
@@ -28,7 +27,6 @@
                 font-weight: 480; 
                 color: #6c757d;
                 letter-spacing:1px;
-                color: blue;
                 img{
                     width: 2rem;
                 }
@@ -36,13 +34,13 @@
         }
         .top_header-redes{
             display: flex;
-            gap:1.5rem;
+            gap:2rem;
             flex-wrap: wrap;
             margin-bottom: 0rem;
             list-style: none;
             a{
                 img{
-                    width: 3rem;
+                    width: 2.8rem;
                     height: 100%;
                 }
             }
@@ -83,15 +81,23 @@
 }
 .header{
     width: 100%;
-    
-    z-index:9999;
     position: sticky;
+    z-index: 1000;
     top: 0;
     .header-nav{
         background-color: variables.$prime-color;
         height: 6rem;
         color: #555;
         box-shadow: 0 4px 18px 0 rgba(0,0,0,.12),0 7px 10px -5px rgba(0,0,0,.15);;
+        a{
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+        input{
+            display: none;
+        }
         .nav-ul{
             align-items: center;
             font-size: 5rem;
@@ -122,10 +128,10 @@
                 padding-left: 1rem;
                 &:hover > ul{
                     display: block;
-                    position: absolute;
                     font-size: 5rem;
-                    top: 17.5rem;
+                    top: 5rem;
                     padding: 0rem;
+                    position: absolute;
                 }
                 a{
                     color: variables.$fonts-color;;
