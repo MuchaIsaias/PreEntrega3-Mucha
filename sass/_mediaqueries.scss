@@ -1,5 +1,4 @@
 @media (max-width:1200px){
-    
     .header{
         .header-nav{
             .nav-ul{
@@ -22,16 +21,51 @@
                 padding: 2rem;
             }
         }
+        .index-carousel{
+            .carousel{
+                .conteiner-imagenes{
+                    div{
+                        height: 40rem;
+                        img{
+                            height: 40rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        h2{
+            font-size: 3.5rem;
+            padding-left: 8rem;
+        }
+        .footer-info{
+            padding-left: 7rem;
+            padding-right: 5rem;
+            h3{
+                font-size: 2.8rem;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+        }
+        .footer-form{
+            form{
+                input{
+                    width: 85%;
+                }
+            }
+            .footer-redes{
+            gap: 3rem;
+            }
+        }
     }
 }
-@media (max-width:990px){
+
+@media (max-width:991px){
     .top_header{
         .top_header-informacion{
             display: none;
-        }
-        .body_header{
-            form{
-            }
         }
     }
     .header{
@@ -58,8 +92,61 @@
                 padding-top: 2rem;
             }
         }
+        .index-carousel{
+            .carousel{
+                .conteiner-imagenes{
+                    div{
+                        height: 30rem;
+                        img{
+                            height: 30rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-tienda{
+        padding-left: 2rem;
+        .tienda-categorias{
+            display: none;
+        }
+        .todos-los-productos{
+            article{
+                
+                img{
+                    width: 25rem;
+                }
+            }
+        }
+    }
+    .footer{
+        h2{
+            font-size: 3.5rem;
+            padding-left: 5rem;
+        }
+        .footer-info{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            h3{
+                font-size: 2.8rem;
+            }
+            p{
+                font-size: 1.8rem;
+            }
+        }
+        .footer-form{
+            form{
+                input{
+                    width: 85%;
+                }
+            }
+            .footer-redes{
+            gap: 2rem;
+            }
+        }
     }
 }
+
 @media (max-width:780px){
     .top_header{
         display: none;
@@ -139,10 +226,88 @@
             }
         }
     }
+    .main-tienda{
+        padding-left: 2rem;
+        .todos-los-productos{
+            article{
+                
+                img{
+                    width: 24rem;
+                    height: 80%;
+                }
+            }
+        }
+    }
+    .footer{
+        
+        h2{
+            font-size: 4rem;
+            padding-left: 9rem;
+        }
+        .footer-info{
+            padding-right: 5rem;
+            padding-left: 7rem;
+            padding-bottom: 2rem;
+            h3{
+                font-size: 3.2rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+        .footer-form{
+            form{
+                align-items: center;
+                input{
+                    width: 80%;
+                }
+                h3{
+                    font-size: 2.3rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+            .footer-redes{
+                padding-top: 5rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 4rem;
+                li{
+                    a{
+                        img{
+                            width: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
 @media (max-width:620px){
     
 }
+
 @media (max-width:580px){
-    
+    main{
+        .index-carousel{
+            .carousel{
+                .conteiner-imagenes{
+                    div{
+                        height: 25rem;
+                        img{
+                            height: 25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        h2{
+            font-size: 3.8rem;
+            padding-left: 4rem;
+        }
+    }
 }
