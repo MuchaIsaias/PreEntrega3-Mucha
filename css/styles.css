@@ -234,6 +234,7 @@ p {
 
 .main-tienda {
   padding-left: 9rem;
+  margin-right: 0rem;
 }
 .main-tienda h2 {
   border-bottom: 1px solid #dee2e6;
@@ -609,9 +610,13 @@ main .productos article .conteiner-cards .conteiner-button button img {
   }
   .main-tienda {
     padding-left: 2rem;
+    padding-right: 0rem;
   }
   .main-tienda .tienda-categorias {
     display: none;
+  }
+  .main-tienda .todos-los-productos {
+    padding-right: 2rem;
   }
   .main-tienda .todos-los-productos article img {
     width: 25rem;
@@ -656,7 +661,7 @@ main .productos article .conteiner-cards .conteiner-button button img {
     display: block;
     position: absolute;
     cursor: pointer;
-    right: 10rem;
+    right: 9rem;
     width: 4.5rem;
     height: 4.5rem;
     top: 3rem;
@@ -685,9 +690,10 @@ main .productos article .conteiner-cards .conteiner-button button img {
   }
   .header .header-nav a {
     display: flex;
+    position: relative;
     width: 10rem;
-    right: 20rem;
-    padding-left: 10rem;
+    top: 0rem;
+    left: 7rem;
   }
   .header .header-nav a img {
     width: 10rem;
@@ -760,15 +766,56 @@ main .productos article .conteiner-cards .conteiner-button button img {
   }
 }
 @media (max-width: 580px) {
+  .header .header-nav a {
+    left: 6rem;
+  }
+  .header .header-nav .checkbox, .header .header-nav .menu {
+    right: 6rem;
+  }
   main .index-carousel .carousel .conteiner-imagenes div {
     height: 25rem;
   }
   main .index-carousel .carousel .conteiner-imagenes div img {
     height: 25rem;
   }
+  .main-tienda .todos-los-productos {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .main-tienda .todos-los-productos article {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-tienda .todos-los-productos article img {
+    width: 100%;
+  }
+  .main-tienda .todos-los-productos article .conteiner-cards {
+    align-items: center;
+  }
+  .main-tienda .todos-los-productos article .conteiner-cards .conteiner-button button {
+    width: 10rem;
+    height: 4rem;
+  }
+  .main-tienda .todos-los-productos article .conteiner-cards .conteiner-button button img {
+    height: auto;
+  }
   .footer h2 {
     font-size: 3.8rem;
     padding-left: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .header .header-nav a {
+    left: 4rem;
+  }
+  .header .header-nav .checkbox, .header .header-nav .menu {
+    right: 4rem;
+  }
+  main .index-carousel .carousel .conteiner-imagenes div {
+    height: 22rem;
+  }
+  main .index-carousel .carousel .conteiner-imagenes div img {
+    height: 22rem;
   }
 }
 * {

@@ -107,10 +107,12 @@
     }
     .main-tienda{
         padding-left: 2rem;
+        padding-right: 0rem;
         .tienda-categorias{
             display: none;
         }
         .todos-los-productos{
+            padding-right: 2rem;
             article{
                 
                 img{
@@ -164,7 +166,7 @@
                 display: block;
                 position: absolute;
                 cursor: pointer;
-                right: 10rem;
+                right: 9rem;
                 width: 4.5rem;
                 height: 4.5rem;
                 top: 3rem;
@@ -193,9 +195,11 @@
             }
             a{
                 display: flex;
+                position: relative;
                 width: 10rem;
-                right: 20rem;
-                padding-left: 10rem;
+                top: 0rem;
+                left: 7rem;
+                
                 img{
                     width: 10rem;
                     display: flex;
@@ -285,11 +289,17 @@
     }
 }
 
-@media (max-width:620px){
-    
-}
-
 @media (max-width:580px){
+    .header{
+        .header-nav{
+            a{
+                left: 6rem;
+            }
+            .checkbox, .menu{
+                right: 6rem;
+            }
+        }
+    }
     main{
         .index-carousel{
             .carousel{
@@ -304,10 +314,62 @@
             }
         }
     }
+    .main-tienda{
+        .todos-los-productos{
+            padding-left: 5rem;
+            padding-right: 5rem;
+            article{
+                display: flex;
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+                .conteiner-cards{
+                    align-items: center;
+                    .conteiner-button{
+                        button{
+                            width: 10rem;
+                            height: 4rem;
+                            img{
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .footer{
         h2{
             font-size: 3.8rem;
             padding-left: 4rem;
+        }
+    }
+}
+
+@media (max-width:480px){
+    .header{
+        .header-nav{
+            a{
+                left: 4rem;
+            }
+            .checkbox, .menu{
+                right: 4rem;
+            }
+        }
+    }
+    main{
+        .index-carousel{
+            .carousel{
+                .conteiner-imagenes{
+                    div{
+                        height: 22rem;
+                        img{
+                            height: 22rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
