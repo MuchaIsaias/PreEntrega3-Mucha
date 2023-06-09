@@ -1,5 +1,6 @@
+@use'../variables';
 .main-contactos{
-    background-color: #ebebeb;
+    background-color: variables.$fondo-gris;
     .contactos-section{
         display: flex;
         justify-content: center;
@@ -9,7 +10,7 @@
             h2{
                 font-size: 2.7rem;
                 padding: 1rem;
-                color: #4286f4;
+                color: variables.$color_secundario;
             }
             div{
                 display: flex;
@@ -17,7 +18,7 @@
                 gap: 2rem;
                 h3{
                     font-size: 2.2rem;
-                    color: #4286f4;
+                    color: variables.$color-secundario;
                 }
                 p{
                     font-size: 1.8rem;

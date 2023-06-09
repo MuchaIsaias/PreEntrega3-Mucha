@@ -1,3 +1,4 @@
+@use'../variables';
 main{
     .index-carousel{
         margin-bottom: 8rem;
@@ -29,13 +30,13 @@ main{
                     font-size: 1.2rem;
                     letter-spacing:1.4px;
                     font-weight: 550;
-                    color: #6c757d;
+                    color: variables.$color-tercero;
                 }
             }
             h3{
                 font-weight: 700;
                 font-size: 1.5rem;
-                color: #4286f4;
+                color: variables.$color-secundario;
             }
         }
     }
@@ -44,7 +45,7 @@ main{
         h2{
             text-align: center;
             font-size: 3rem;
-            color: #4286f4;
+            color: variables.$color-secundario;
         }
     }
     .productos{
@@ -56,7 +57,7 @@ main{
             width: 28rem;
             padding: 0rem;
             .conteiner-cards:hover{
-            box-shadow: 0 10px 20px #c7c7c7;
+            box-shadow: variables.$sombras-secundarias;
             transform: translate(0,-3px);
             }
             .conteiner-cards{
@@ -66,7 +67,7 @@ main{
                 justify-content: space-between;
                 align-items: center;
                 gap: 1rem;
-                box-shadow: 0 1px 5px #c7c7c7;
+                box-shadow: variables.$sombras-primarias;
                 padding: 0rem 2rem 0rem 2rem;
                 transition: all 0.3s;
                 img{
@@ -75,7 +76,7 @@ main{
                 div{
                     text-align: center ;
                     p:hover{
-                        color: #4286f4;
+                        color: variables.$color-secundario;
                     }
                     p{
                         font-size: 1.6rem;
@@ -83,7 +84,7 @@ main{
                     }
                 }
                 h3{
-                    color: #4286f4;
+                    color: variables.$color-secundario;
                     text-align: center;
                     font-size: 2rem;
                     font-weight: 600;
@@ -94,9 +95,9 @@ main{
                     width: 100%;
                     padding-bottom: 1rem;
                     button:hover{
-                        box-shadow: 0 1px 5px #c7c7c7;
+                        box-shadow: variables.$sombras-primarias;
                         transform: translate(0,-3px);
-                        background-color: #4286f4;
+                        background-color: variables.$color-secundario;
                     }
                     button{
                         transition: all 0.3s;
@@ -104,13 +105,40 @@ main{
                         width: 50%;
                         height: 4.5rem;
                         background-color: white;
-                        border: 1px #dee2e6 solid;
+                        border: variables.$border-gris;
                         img{
                             width: 2.5rem;
                         }
                     }
                 }
             }
+        }
+    }
+    .slider{
+        width: 85vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        .slider-track{
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: (200px * 26);
+            align-items: center;
+            gap: 3rem;
+            .slide{
+                width: 200px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-180px * 13);
         }
     }
 }

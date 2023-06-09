@@ -13,7 +13,7 @@
         .top_header-titulo{
             h1{
                 font-size: 2rem;
-                color: #6c757d;
+                color: variables.$color-tercero;
                 margin-bottom: 0rem;
                 padding-top: 0.2rem;
             }
@@ -25,7 +25,7 @@
             p{
                 font-size: 1.5rem;
                 font-weight: 480; 
-                color: #6c757d;
+                color: variables.$color-tercero;
                 letter-spacing:1px;
                 img{
                     width: 2rem;
@@ -50,7 +50,7 @@
         @include flex(flex,row,space-evenly,wrap);
         background-color: variables.$fonts-color;
         border-bottom:variables.$box;
-        border-top:1px solid #dee2e6;
+        border-top:variables.$border-gris;
         a{
             padding: 1.7rem;
         }
@@ -62,7 +62,7 @@
                 width: 43rem;
                 height: initial;
                 font-size: 2rem;
-                border:1px solid #dee2e6;;
+                border:variables.$border-gris;
                 padding: 1rem;
             }
             .boton-input-header{
@@ -70,7 +70,11 @@
                 height: initial;
                 width: 8.3rem;
                 padding: 1rem;
-                border: 1px solid #dee2e6;
+                border: variables.$border-gris;
+                img{
+                    width: auto;
+                    height: 2.5rem;
+                }
             }
         }
         img{
@@ -85,9 +89,9 @@
     z-index: 1000;
     top: 0;
     .header-nav{
-        background-color: variables.$prime-color;
+        background-color: variables.$color_primario;
         height: 6rem;
-        color: #555;
+        color: variables.$color-tercero;
         box-shadow: 0 4px 18px 0 rgba(0,0,0,.12),0 7px 10px -5px rgba(0,0,0,.15);;
         a{
             display: none;
@@ -104,35 +108,12 @@
             list-style: none;
             height: 100%;
             margin: 0rem;
-            .nav-ul-li:nth-child(1){
-                border-right: variables.$box;
-                height: 65%;
-                justify-content: end;
-                a{
-                    .flecha{
-                        width: 1.5rem;
-                        height: 1.7rem;
-                        color: #dee2e6;
-                        margin: 0rem 1rem 0rem 1rem;
-                        padding-right: 0rem;
-                    }
-                }
-            }
-            .nav-ul-li:nth-child(2){
-                padding-left: 3.5rem;
-            }
             .nav-ul-li{
                 align-items: center;
                 height: 100%;
                 display: flex;
                 padding-left: 1rem;
-                &:hover > ul{
-                    display: block;
-                    font-size: 5rem;
-                    top: 5rem;
-                    padding: 0rem;
-                    position: absolute;
-                }
+                transition: transform 0.5s;
                 a{
                     color: variables.$fonts-color;;
                     text-decoration: none;
@@ -145,8 +126,41 @@
                         padding-right: 1rem;
                     }
                 }
+            }
+            .nav-ul-li:nth-child(2){
+                padding-left: 3.5rem;
+            }
+            .nav-ul-li:not(.li-categorias){
+                &:hover{
+                    transform: translateY(-0.5rem);
+                    background-color: variables.$color-secundario;
+                    font-size: 4rem;
+                    color: variables.$color-tercero;
+                    }
+            }
+            .li-categorias{
+                border-right: variables.$box;
+                height: 65%;
+                justify-content: end;
+                a{
+                    .flecha{
+                        width: 1.5rem;
+                        height: 1.7rem;
+                        color: variables.$color-cuarto;
+                        margin: 0rem 1rem 0rem 1rem;
+                        padding-right: 0rem;
+                    }
+                }
+                &:hover > ul{
+                    display: block;
+                    font-size: 4.4rem;
+                    top: 5rem;
+                    padding: 0rem;
+                    position: absolute;
+                    left: 4.1rem;
+                }
                 ul{
-                    background-color: variables.$prime-color;
+                    background-color: variables.$color_primario;
                     display: none;
                     width: 20rem;
                     list-style: none;
@@ -154,13 +168,15 @@
                         padding-left: 1rem;
                         padding-bottom: 1rem;
                         width: 100%;
-                        border-top: 1px solid #6c757d;
+                        border-bottom: variables.$box;
                         a{
                             display: block;
                             width: 100%;
                         }
                         &:hover{
-                            background-color: darkgrey;
+                            background-color: variables.$color-secundario;
+                            transform: translateY(-0.5rem);
+                            font-size:3.2rem;
                         }
                     }
                 }

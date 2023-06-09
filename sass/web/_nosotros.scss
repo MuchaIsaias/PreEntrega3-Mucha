@@ -1,11 +1,12 @@
+@use'../variables';
 .nosotros-main{
     padding: 5rem;
-    background-color:#ebebeb ;
+    background-color:variables.$fondo-gris;
     .nosotros-section{
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        background-color: #ebebeb;
+        background-color: variables.$fondo-gris;
         .nosotros-titulo{
             h2{
                 font-size: 3rem;

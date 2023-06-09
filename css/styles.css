@@ -40,7 +40,7 @@
   flex-wrap: wrap;
   background-color: #fff;
   border-bottom: 1px solid #6c757d;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px #dee2e6 solid;
 }
 .top_header .body_header a {
   padding: 1.7rem;
@@ -54,7 +54,7 @@
   width: 43rem;
   height: initial;
   font-size: 2rem;
-  border: 1px solid #dee2e6;
+  border: 1px #dee2e6 solid;
   padding: 1rem;
 }
 .top_header .body_header form .boton-input-header {
@@ -62,7 +62,11 @@
   height: initial;
   width: 8.3rem;
   padding: 1rem;
-  border: 1px solid #dee2e6;
+  border: 1px #dee2e6 solid;
+}
+.top_header .body_header form .boton-input-header img {
+  width: auto;
+  height: 2.5rem;
 }
 .top_header .body_header img {
   width: 9rem;
@@ -78,7 +82,7 @@
 .header .header-nav {
   background-color: #08527A;
   height: 6rem;
-  color: #555;
+  color: #6c757d;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 .header .header-nav a {
@@ -97,33 +101,12 @@
   height: 100%;
   margin: 0rem;
 }
-.header .header-nav .nav-ul .nav-ul-li:nth-child(1) {
-  border-right: 1px solid #6c757d;
-  height: 65%;
-  justify-content: end;
-}
-.header .header-nav .nav-ul .nav-ul-li:nth-child(1) a .flecha {
-  width: 1.5rem;
-  height: 1.7rem;
-  color: #dee2e6;
-  margin: 0rem 1rem 0rem 1rem;
-  padding-right: 0rem;
-}
-.header .header-nav .nav-ul .nav-ul-li:nth-child(2) {
-  padding-left: 3.5rem;
-}
 .header .header-nav .nav-ul .nav-ul-li {
   align-items: center;
   height: 100%;
   display: flex;
   padding-left: 1rem;
-}
-.header .header-nav .nav-ul .nav-ul-li:hover > ul {
-  display: block;
-  font-size: 5rem;
-  top: 5rem;
-  padding: 0rem;
-  position: absolute;
+  transition: transform 0.5s;
 }
 .header .header-nav .nav-ul .nav-ul-li a {
   color: #fff;
@@ -137,24 +120,55 @@
   width: 4rem;
   padding-right: 1rem;
 }
-.header .header-nav .nav-ul .nav-ul-li ul {
+.header .header-nav .nav-ul .nav-ul-li:nth-child(2) {
+  padding-left: 3.5rem;
+}
+.header .header-nav .nav-ul .nav-ul-li:not(.li-categorias):hover {
+  transform: translateY(-0.5rem);
+  background-color: #4286f4;
+  font-size: 4rem;
+  color: #6c757d;
+}
+.header .header-nav .nav-ul .li-categorias {
+  border-right: 1px solid #6c757d;
+  height: 65%;
+  justify-content: end;
+}
+.header .header-nav .nav-ul .li-categorias a .flecha {
+  width: 1.5rem;
+  height: 1.7rem;
+  color: #dee2e6;
+  margin: 0rem 1rem 0rem 1rem;
+  padding-right: 0rem;
+}
+.header .header-nav .nav-ul .li-categorias:hover > ul {
+  display: block;
+  font-size: 4.4rem;
+  top: 5rem;
+  padding: 0rem;
+  position: absolute;
+  left: 4.1rem;
+}
+.header .header-nav .nav-ul .li-categorias ul {
   background-color: #08527A;
   display: none;
   width: 20rem;
   list-style: none;
 }
-.header .header-nav .nav-ul .nav-ul-li ul li {
+.header .header-nav .nav-ul .li-categorias ul li {
   padding-left: 1rem;
   padding-bottom: 1rem;
   width: 100%;
-  border-top: 1px solid #6c757d;
+  border-bottom: 1px solid #6c757d;
 }
-.header .header-nav .nav-ul .nav-ul-li ul li a {
+.header .header-nav .nav-ul .li-categorias ul li a {
   display: block;
   width: 100%;
 }
-.header .header-nav .nav-ul .nav-ul-li ul li:hover {
-  background-color: darkgrey;
+.header .header-nav .nav-ul .li-categorias ul li:hover {
+  background-color: #4286f4;
+  transform: translateY(-0.5rem);
+  font-size: 3.2rem;
 }
 
 p {
@@ -233,19 +247,25 @@ p {
 }
 
 .main-tienda {
-  padding-left: 9rem;
+  padding-left: 8rem;
   margin-right: 0rem;
+  background-color: #ebebeb;
 }
 .main-tienda h2 {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px #dee2e6 solid;
   padding: 2rem 0rem 2rem 0rem;
   font-size: 2.8rem;
   color: #4286f4;
 }
 .main-tienda .tienda-categorias {
-  border-right: 1px solid #dee2e6;
+  border-right: 1px #dee2e6 solid;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  height: 50rem;
+}
+.main-tienda .tienda-categorias:hover {
+  box-shadow: 0 1px 5px #c7c7c7;
 }
 .main-tienda .tienda-categorias h3 {
   font-size: 2.2rem;
@@ -264,8 +284,10 @@ p {
 }
 .main-tienda .tienda-categorias ul li a {
   font-size: 2rem;
+  display: block;
   text-decoration: none;
   color: #6c757d;
+  width: 100%;
 }
 .main-tienda .tienda-categorias ul li a:hover {
   color: #4286f4;
@@ -274,11 +296,11 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 3rem;
 }
 .main-tienda .todos-los-productos article {
+  background-color: white;
   display: flex;
 }
 .main-tienda .todos-los-productos article:hover {
@@ -346,7 +368,7 @@ p {
   color: white;
 }
 .ayuda-main .ayuda-main-contenedor div div div {
-  background-color: #ebebeb;
+  background-color: white;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
 }
@@ -542,6 +564,33 @@ main .productos article .conteiner-cards .conteiner-button button {
 main .productos article .conteiner-cards .conteiner-button button img {
   width: 2.5rem;
 }
+main .slider {
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+main .slider .slider-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: 5200px;
+  align-items: center;
+  gap: 3rem;
+}
+main .slider .slider-track .slide {
+  width: 200px;
+}
+main .slider .slider-track .slide img {
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2340px);
+  }
+}
 
 @media (max-width: 1200px) {
   .header .header-nav .nav-ul {
@@ -702,11 +751,11 @@ main .productos article .conteiner-cards .conteiner-button button img {
   .header .header-nav .nav-ul {
     display: none;
     text-align: center;
-    background-color: gray;
+    background-color: #6c757d;
     transition: all 3s;
   }
   .header .header-nav .nav-ul .nav-ul-li {
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px #dee2e6 solid;
     width: 100%;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -771,6 +820,8 @@ main .productos article .conteiner-cards .conteiner-button button img {
   }
   .header .header-nav .checkbox, .header .header-nav .menu {
     right: 6rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
   main .index-carousel .carousel .conteiner-imagenes div {
     height: 25rem;

@@ -1,21 +1,28 @@
+@use'../variables';
 .main-tienda{
-    padding-left: 9rem;
+    padding-left: 8rem;
     margin-right: 0rem;
+    background-color: variables.$fondo-gris;
     h2{
-        border-bottom: 1px solid #dee2e6;
+        border-bottom: variables.$border-gris;
         padding: 2rem 0rem 2rem 0rem;
         font-size: 2.8rem;
         color: #4286f4;
     }
     .tienda-categorias{
-        border-right: 1px solid #dee2e6;
+        border-right: variables.$border-gris;
         display: flex;
         flex-direction: column;
+        background-color: white;
+        height: 50rem;
+        &:hover{
+            box-shadow: variables.$sombras-primarias;
+        }
         h3{
             font-size: 2.2rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            color: #4286f4;
+            color: variables.$color-secundario;
         }
         ul{
             display: flex;
@@ -24,13 +31,14 @@
             padding-left: 0rem;
             li{
                 list-style: none;
-                
                 a{
                     font-size: 2rem;
+                    display: block;
                     text-decoration: none;
-                    color: #6c757d;
+                    color: variables.$color-tercero;
+                    width: 100%;
                     &:hover{
-                        color: #4286f4;
+                        color: variables.$color-secundario;
                     }
                 }
             }
@@ -40,18 +48,18 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding-top: 2rem;
         padding-left: 2rem;
         padding-right: 3rem;
         article{
+            background-color: white;
             display: flex;
             &:hover{
-                box-shadow: 0 1px 5px #c7c7c7;
+                box-shadow: variables.$sombras-primarias;
             }
             img{
                 width: 28rem;
                 &:hover{
-                    box-shadow: 0 1px 5px #c7c7c7;
+                    box-shadow:variables.$sombras-primarias;
                 }
             }
             .conteiner-cards{
@@ -69,13 +77,13 @@
                 }
                 p{
                     font-size: 2rem;
-                    color: #6c757d;
+                    color: variables.$color-tercero;
                 }
                 h3{
                     font-size: 2.2rem;
                     padding-bottom: 1rem;
                     padding-top: 1rem;
-                    color: #4286f4;
+                    color: variables.$color-secundario;
                 }
                 .conteiner-button{
                     padding-top: 2rem;
@@ -85,9 +93,9 @@
                         width: 10rem;
                         height: 4rem;
                         background-color: white;
-                        box-shadow: 0 1px 5px #c7c7c7;
+                        box-shadow: variables.$sombras-primarias;
                         &:hover{
-                            background-color: #4286f4;
+                            background-color: variables.$color-secundario;
                         }
                         img{
                             width: 3rem;
