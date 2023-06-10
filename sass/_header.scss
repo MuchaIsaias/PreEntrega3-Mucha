@@ -51,9 +51,6 @@
         background-color: variables.$fonts-color;
         border-bottom:variables.$box;
         border-top:variables.$border-gris;
-        a{
-            padding: 1.7rem;
-        }
         form{
             display: flex;
             align-items: center;
@@ -78,8 +75,8 @@
             }
         }
         img{
-            width: 9rem;
-            height: 8rem;
+            width: 12rem;
+            height: 11rem;
         }
     }
 }

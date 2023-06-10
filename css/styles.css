@@ -42,9 +42,6 @@
   border-bottom: 1px solid #6c757d;
   border-top: 1px #dee2e6 solid;
 }
-.top_header .body_header a {
-  padding: 1.7rem;
-}
 .top_header .body_header form {
   display: flex;
   align-items: center;
@@ -69,8 +66,8 @@
   height: 2.5rem;
 }
 .top_header .body_header img {
-  width: 9rem;
-  height: 8rem;
+  width: 12rem;
+  height: 11rem;
 }
 
 .header {
