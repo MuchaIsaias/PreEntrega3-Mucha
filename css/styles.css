@@ -167,8 +167,6 @@
 }
 .header .header-nav .nav-ul .li-categorias ul li:hover {
   background-color: #4286f4;
-  transform: translateY(-0.5rem);
-  font-size: 3.2rem;
 }
 
 p {
@@ -752,7 +750,10 @@ main .slider .slider-track .slide img {
     display: none;
     text-align: center;
     background-color: #6c757d;
-    transition: all 3s;
+  }
+  .header .header-nav .nav-ul .nav-ul-li:not(.li-categorias):hover {
+    transform: none;
+    background-color: #c7c7c7;
   }
   .header .header-nav .nav-ul .nav-ul-li {
     border-bottom: 1px #dee2e6 solid;
@@ -763,6 +764,7 @@ main .slider .slider-track .slide img {
   .header .header-nav .nav-ul .nav-ul-li a {
     color: black;
     font-size: 2.3rem;
+    width: 100%;
   }
   .header .header-nav .nav-ul .nav-ul-li a img {
     display: none;

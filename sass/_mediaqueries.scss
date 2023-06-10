@@ -210,8 +210,12 @@
                 display: none;
                 text-align: center;
                 background-color: variables.$color-tercero;
-                transition: all 3s;
-                
+                .nav-ul-li:not(.li-categorias){
+                    &:hover{
+                        transform:none;
+                        background-color: variables.$color-quinto;
+                    }
+                }
                 .nav-ul-li{
                     border-bottom: variables.$border-gris;
                     width: 100%;
@@ -220,6 +224,7 @@
                     a{
                         color: black;
                         font-size: 2.3rem;
+                        width: 100%;
                         img{
                             display: none;
                         }
